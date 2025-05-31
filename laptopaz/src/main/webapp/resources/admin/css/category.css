@@ -1,0 +1,19 @@
+.table th, .table td {
+    vertical-align: middle;  /* Đảm bảo nội dung trong các ô được căn giữa */
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Hiệu ứng hover khi di chuột */
+}
+
+.btn {
+    width: 110px; /* Đặt chiều rộng cho các nút */
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btncreate{
+    width: 170px;
+}
+.btn:hover {
+    transform: translateY(-1px); /* Hiệu ứng nâng lên khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng shadow */
+}

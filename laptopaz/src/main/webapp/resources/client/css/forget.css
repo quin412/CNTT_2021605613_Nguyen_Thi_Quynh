@@ -1,0 +1,8 @@
+.mauden{
+    position: absolute;
+    width: 40%;
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
