@@ -36,7 +36,11 @@ public class CartController {
             cartService.handleAddProductToCart(email, cartRequest.getProductId(), session,
                     cartRequest.getQuantity());
 
-            int sum = (int) session.getAttribute("sum");
+            Object sumObj = session.getAttribute("sum");
+            int sum = 0;
+            if (sumObj instanceof Number) {
+                sum = ((Number) sumObj).intValue();
+            }
 
             return ResponseEntity.ok().body(sum);
         } catch (RuntimeException e) {

@@ -132,13 +132,7 @@
             text-decoration-line: underline;
             text-transform: uppercase;
         }
-        .messenger-floating {
-            position: fixed;
-            bottom: 140px;
-            right: 20px;
-            z-index: 1050;
-            padding: 10px;
-        }
+
         .product-title {
             font-size: 36px;
             font-weight: bold;
@@ -247,7 +241,7 @@
             <h5 class="mb-0 fw-bold">
                 <i class="fas fa-bolt me-2 text-white"></i> <span class="text-white">SẢN PHẨM BÁN CHẠY</span>
             </h5>
-            <a href="#" class="text-white text-decoration-underline">Xem thêm khuyến mãi</a>
+
         </div>
 
         <div class="row g-3 mt-2">
@@ -435,9 +429,7 @@
     </div>
 </div>
 <div class="">
-<a href="https://m.me/657435530778911" target="_blank" class="messenger-floating">
-    <img src="/images/messenger-icon.svg" alt="Messenger" width="50">
-</a>
+
 </div>
 <div class="abovepage">
     <jsp:include page="../layout/chatbotWidget.jsp"/>

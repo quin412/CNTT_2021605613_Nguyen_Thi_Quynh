@@ -81,7 +81,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center">
-                                            <a href="/forget" class="text-danger">Quên mật khẩu?</a>
+                                            <a href="/forget" class="text-dark">Quên mật khẩu?</a>
                                         </div>
                                     </div>
                                     <div>
@@ -94,7 +94,7 @@
                                     </c:if>
                                     <div class="mt-4 mb-0">
                                         <div class="d-grid">
-                                            <button class="btn btn-danger btn-block">
+                                            <button class="btn btn-success btn-block">
                                                 Đăng nhập
                                             </button>
                                         </div>

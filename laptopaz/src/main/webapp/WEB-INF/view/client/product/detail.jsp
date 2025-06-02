@@ -282,7 +282,7 @@
                 <div class="row fruite">
 
                         <div class="mb-4 p-2 border rounded shadow-sm" style="background-color: #f8f9fa;">
-                            <h6 style="color: red; text-align:center;">YÊN TÂM MUA SẮM TẠI LAPTOP AZ</h6>
+                            <h6 style="color: red; text-align:center;">YÊN TÂM MUA SẮM</h6>
                             <ul class="list-unstyled fruite-categorie" style="line-height: 1.8;">
                                 <li style="margin-bottom: 6px;">✔ Chất lượng sản phẩm là hàng đầu</li>
                                 <li style="margin-bottom: 6px;">✔ Dùng test máy 15 ngày đầu lỗi 1 đổi 1</li>
@@ -368,7 +368,6 @@
 <script src="/client/lib/waypoints/waypoints.min.js"></script>
 <script src="/client/lib/lightbox/js/lightbox.min.js"></script>
 <script src="/client/lib/owlcarousel/owl.carousel.min.js"></script>
-
 <script src="/client/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script>
 <script>

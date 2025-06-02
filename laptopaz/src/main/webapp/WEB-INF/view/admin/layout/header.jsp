@@ -4,15 +4,16 @@
 <%@ page import="com.example.laptopaz.domain.entity.Customer" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+<nav class="sb-topnav navbar navbar-expand navbar-light">
     <!-- Navbar Brand-->
-    <a class="navbar-brand ps-3 text-primary" style="font-family: 'Courier New', monospace; font-size: 32px; font-weight: bold;" href="/admin">LaptopAZ</a>
+        <a class="navbar-brand ps-3" style="font-family: 'Georgia'; font-size: 32px; font-weight: bold; color: orangered" href="/admin">LaptopA-Z</a>
+
     <!-- Sidebar Toggle-->
     <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
             class="fas fa-bars"></i></button>
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                <span style="color: white;">Welcome,
+                <span style="color: black;">Welcome,
                    <%
                        String userName = "Guest";
                        if (request.getUserPrincipal() != null) {

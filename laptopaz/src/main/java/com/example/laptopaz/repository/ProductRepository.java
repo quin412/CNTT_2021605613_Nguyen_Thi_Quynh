@@ -60,8 +60,9 @@ public interface ProductRepository extends JpaRepository<Product, Long>, JpaSpec
 
     @Transactional
     @Modifying
-    @Query(value = "UPDATE products c set c.is_deleted = true WHERE  c.product_id = ?1", nativeQuery = true)
+    @Query(value = "DELETE FROM products WHERE product_id = ?1", nativeQuery = true)
     void deleteProduct(long id);
+
 
     @Query(value = """
             SELECT 
@@ -150,12 +151,11 @@ public interface ProductRepository extends JpaRepository<Product, Long>, JpaSpec
     List<Object[]> findLowSellingProducts();
 
 
-    @Query("SELECT p FROM Product p WHERE p.category.categoryId = :categoryId " +
-            "AND p.price BETWEEN :minPrice AND :maxPrice " +
+    @Query("SELECT p FROM Product p WHERE p.price BETWEEN :minPrice AND :maxPrice " +
             "AND p.productId <> :excludeProductId")
-    List<Product> findSimilar(@Param("categoryId") Long categoryId,
-                              @Param("minPrice") double minPrice,
+    List<Product> findSimilar(@Param("minPrice") double minPrice,
                               @Param("maxPrice") double maxPrice,
                               @Param("excludeProductId") Long excludeProductId);
+
 
 }

@@ -12,7 +12,7 @@
     <meta name="author" content=""/>
     <title>ADMIN</title>
     <link href="/css/styles.css" rel="stylesheet"/>
-    <script src="/js/bootstrap.bundle.min.js"></script>
+
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.1.0/apexcharts.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
@@ -181,8 +181,7 @@
         <jsp:include page="../layout/footer.jsp"/>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
 <script src="/js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
@@ -436,6 +435,7 @@
             // Populate the table
             products
                 .filter(product => product.totalSales >= 1) // lọc doanh số ≥ 1
+                .slice(0, 5)
                 .forEach(product => {
                     const row = tableBody.insertRow(); // Create a new row
 
@@ -464,6 +464,7 @@
             } else {
                 // Initialize the DataTable
                 dataTable = new simpleDatatables.DataTable("#datatablesSimple", {
+                    paging: false,
                     labels: {
                         placeholder: "Tìm kiếm...", // Custom placeholder text
                         perPage: "Số lượng hiển thị trên một trang", // Customize "entries per page"
@@ -493,7 +494,9 @@
             const tableBody = document.querySelector("#lowSalesTable tbody");
             tableBody.innerHTML = ""; // Clear existing rows
 
-            data.forEach(product => {
+            data
+                .slice(0, 5)
+                .forEach(product => {
                 const row = tableBody.insertRow();
 
                 const cellId = row.insertCell(0);
@@ -516,6 +519,7 @@
                 lowSalesTableInstance.refresh();
             } else {
                 lowSalesTableInstance = new simpleDatatables.DataTable("#lowSalesTable", {
+                    paging: false,
                     labels: {
                         placeholder: "Tìm kiếm...",
                         perPage: "Số lượng hiển thị",

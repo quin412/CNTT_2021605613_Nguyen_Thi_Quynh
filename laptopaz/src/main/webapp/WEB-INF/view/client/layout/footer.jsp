@@ -6,10 +6,10 @@
         <div class="row">
             <!-- CÔNG TY -->
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-3">CÔNG TY TNHH LAPTOPAZ VIỆT NAM</h5>
-                <p>Địa chỉ: Số 18, ngõ 121, Thái Hà, Đống Đa, Hà Nội</p>
-                <p>Hotline: 0825 233 233</p>
-                <p>Email: laptopaz2025@gmail.com</p>
+                <h5 class="text-white mb-3">CÔNG TY TNHH LAPTOP VIỆT NAM</h5>
+                <p>Địa chỉ: Số 6, Ngõ 34, Phú Kiều, Bắc Từ Liêm, Hà Nội</p>
+                <p>Hotline: 0912 345 678</p>
+                <p>Email: datn@gmail.com</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social mx-2" href="#"><i class="fab fa-youtube"></i></a>
@@ -62,13 +62,9 @@
 
             <!-- HỆ THỐNG CỬA HÀNG -->
             <div class="col-lg-4 col-md-6">
-                <h5 class="text-white mb-3">HỆ THỐNG CỬA HÀNG LAPTOPAZ</h5>
-                <p><strong>LaptopAZ cơ sở Thái Hà:</strong> Số 18, ngõ 121, Thái Hà, Đống Đa, Hà Nội</p>
-                <p>Hotline: 0825 233 233</p>
-                <p>Bán hàng: Từ 8h30 - 21h30</p>
-                <p>Kỹ thuật: Từ 8h30 - 12h & 13h30 - 17h30</p>
-                <p><strong>LaptopAZ cơ sở Hà Đông:</strong> Số 56 Trần Phú, Hà Đông, Hà Nội</p>
-                <p>Hotline: 0825 233 233</p>
+                <h5 class="text-white mb-3">HỆ THỐNG CỬA HÀNG</h5>
+                <p><strong>Cơ sở Bắc Từ Liêm:</strong> Số 2, Ngõ 34, Phú Kiều, Bắc Từ Liêm, Hà Nội</p>
+                <p>Hotline: 0912 345 678</p>
                 <p>Bán hàng: Từ 8h30 - 21h30</p>
                 <p>Kỹ thuật: Từ 8h30 - 12h & 13h30 - 17h30</p>
             </div>
@@ -80,7 +76,6 @@
         <!-- THÔNG TIN PHÁP LÝ -->
         <div class="row g-4 mb-0">
             <div class="col-lg-12 text-center">
-                <p>MST số: 0106839691. Ngày đăng ký kinh doanh lần đầu: 06/05/2015. Sở KHĐT TP. Hà Nội cấp.</p>
                 <p>© All Rights Reserved</p>
             </div>
         </div>

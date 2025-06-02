@@ -5,16 +5,19 @@
 <div class="container-fluid fixed-top no-padding">
     <div class="container">
         <nav class="navbar navbar-light bg-white navbar-expand-xl">
-            <a href="/" class="navbar-brand">
-                <h2 class="text-primary display-5" style="font-family: 'Century Gothic', sans-serif; font-weight:bold">Laptop<span style= "color: red">AZ</span></h2>
+            <a href="/" class="navbar-brand px-1">
+                <h2 class=" display-5" style="font-family: 'Georgia' ; font-weight:bold; color: #FF6600;">
+                    LaptopA-Z
+                </h2>
+
             </a>
 
             <div class="collapse navbar-collapse bg-white justify-content-between me-4" id="navbarCollapse">
                 <div class="mx-auto mt-2">
                     <form class="search-container" method="get" action="/home">
-                        <input class="form-control search-input border-danger" type="search" placeholder="Bạn cần tìm gì?" name="name"
+                        <input class="form-control search-input border-dark" type="search" placeholder="Bạn cần tìm gì?" name="name"
                                aria-label="Search" value="${searchName}">
-                        <button class="btn-search btn border border-danger btn-md-square bg-white">
+                        <button class="btn-search btn border border-dark btn-md-square bg-white">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>

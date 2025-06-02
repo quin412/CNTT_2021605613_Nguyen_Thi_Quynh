@@ -31,17 +31,8 @@
                             <div class="d-flex">
                                 <h3>Bảng đơn hàng</h3>
                             </div>
-                            <div class="mt-2">
-                            <select id="statusFilter" class="form-select" style="width: 200px; margin-bottom: 10px;">
-                              <option value="">Tất cả trạng thái</option>
-                              <option value="Giao hàng thành công">Giao hàng thành công</option>
-                              <option value="Đang giao hàng">Đang giao hàng</option>
-                              <option value="Đã xác nhận">Đã xác nhận</option>
-                              <option value="Chờ xác nhận">Chờ xác nhận</option>
-                              <option value="Đã hủy">Đã hủy</option>
-                              <option value="Từ chối">Từ chối</option>
-                            </select>
-                            </div>
+
+
                             <hr />
                             <c:if test="${ empty orders}">
                                 <tr>
@@ -148,22 +139,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 <script src="/js/scripts.js"></script>
-<script>
-document.getElementById('statusFilter').addEventListener('change', function() {
-  const selectedStatus = this.value;
-  const rows = document.querySelectorAll('table tbody tr');
 
-  rows.forEach(row => {
-    const statusText = row.cells[4].innerText.trim();
-    if (selectedStatus === "" || statusText === selectedStatus) {
-      row.style.display = '';
-    } else {
-      row.style.display = 'none';
-    }
-  });
-});
 
-</script>
 </body>
 
 </html>

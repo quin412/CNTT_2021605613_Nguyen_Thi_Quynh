@@ -2,7 +2,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div id="layoutSidenav_nav">
-    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+    <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
                 <div class="sb-sidenav-menu-heading">Các chức năng</div>
@@ -24,26 +24,26 @@
                 </div>
 
                 <a class="nav-link" href="/admin/user">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-user-cog"></i></div>
                     Tài khoản
                 </a>
 
                 <a class="nav-link" href="/admin/category">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-list-alt"></i></div>
                     Danh mục
                 </a>
 
                 <a class="nav-link" href="/admin/product">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-laptop"></i></div>
                     Sản phẩm
                 </a>
 
                 <a class="nav-link" href="/admin/order">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>
                     Đơn hàng
                 </a>
                 <a class="nav-link" href="/admin/confirm-order">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-clipboard-check"></i></div>
                     Xác nhận đơn hàng
                 </a>
             </div>

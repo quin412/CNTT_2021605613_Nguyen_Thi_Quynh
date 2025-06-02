@@ -38,7 +38,7 @@
                             </div>
                             <hr />
                             <table class="table table-bordered table-hover table-striped my-3" style="width: 80%; margin: 0 auto;">
-                                <thead class="table-dark">
+                                <thead>
                                     <tr>
                                         <th class="text-center">ID</th>
                                         <th class="text-center">Email</th>

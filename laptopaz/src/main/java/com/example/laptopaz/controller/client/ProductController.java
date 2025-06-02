@@ -45,7 +45,7 @@ public class ProductController {
         model.addAttribute("totalPages", page.getTotalPages());
 
         // Gợi ý sản phẩm tương tự
-        List<Product> relatedProducts = productService.findSimilarProducts(pr.getCategory().getCategoryId(), pr.getPrice(), pr.getProductId());
+        List<Product> relatedProducts = productService.findSimilarProducts(pr.getPrice(), pr.getProductId());
         model.addAttribute("relatedProducts", relatedProducts);
 
         return "client/product/detail";

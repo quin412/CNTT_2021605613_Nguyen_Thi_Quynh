@@ -106,7 +106,7 @@ public class ProductServiceImpl {
     }
 
     public void deleteProduct(long id) {
-        productRepository.deleteProduct(id);
+        productRepository.deleteById(id);
     }
 
     public Optional<Product> fetchProductById(long id) {
@@ -130,10 +130,10 @@ public class ProductServiceImpl {
         productRepository.save(existingProduct);  // Lưu lại vào DB
     }
 
-    public List<Product> findSimilarProducts(Long categoryId, double price, Long excludeProductId) {
+    public List<Product> findSimilarProducts(double price, Long excludeProductId) {
         double minPrice = price * 0.8;
         double maxPrice = price * 1.2;
-        return productRepository.findSimilar(categoryId, minPrice, maxPrice, excludeProductId);
+        return productRepository.findSimilar(minPrice, maxPrice, excludeProductId);
     }
 
 

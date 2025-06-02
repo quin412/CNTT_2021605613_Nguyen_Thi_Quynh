@@ -65,6 +65,7 @@ public class SecurityConfiguration {
                                 "/admin/day/export",
                                 "/admin/month/export").permitAll()
                         .requestMatchers("/admin/order/**").hasAnyRole("ADMIN", "STAFF")
+                        .requestMatchers("/admin/confirm-order").hasAnyRole("ADMIN", "STAFF")
                         .requestMatchers("/admin/update-bill-status").hasAnyRole("ADMIN", "STAFF")
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated())

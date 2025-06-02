@@ -69,7 +69,7 @@
                     <a href="#"><img src="/client/img/banner-right-2.png" class="img-fluid w-100" alt="Cảm nhận khách hàng"></a>
                 </div>
                 <div class="banner-box rounded-3 overflow-hidden">
-                    <a href="#"><img src="/client/img/banner-right-3.png" class="img-fluid w-100" alt="Cảm nhận khách hàng"></a>
+                    <a href="#"><img src="/client/img/banner-right-3.jpg" class="img-fluid w-100" alt="Cảm nhận khách hàng"></a>
                 </div>
             </div>
         </div>
